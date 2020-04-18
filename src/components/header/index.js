@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const Headers = styled.header`
   overflow: hidden;
@@ -32,13 +31,30 @@ const LogoWrap = styled.div`
 const Logo = styled.img`
   max-width: 100%;
 `
-const HeaderBottom = styled.div`
+const HeaderMid = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
 
   img {
     max-width: 100%;
+  }
+`
+
+const HeaderBottom = styled.div`
+  background: #1f1f1f; 
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    color:white;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 19px 0;
+      margin-right:30px;
+      font-size:18px;
+    }
   }
 `
 
@@ -60,8 +76,20 @@ const Header = () => {
           </HeaderTopWrap>
         </div>
       </HeaderTop>
+
+      <HeaderMid>
+        <img src="images/mac.jpg" alt="main-background"/>
+      </HeaderMid>
+
       <HeaderBottom>
-        <img src="images/mac.jpg" />
+        <div className="container">
+        <ul>
+          <li>Coding</li>
+          <li>About life</li>
+          <li>Get a job</li>
+          <li>Get in touch</li>
+        </ul>
+        </div>
       </HeaderBottom>
     </Headers>
   )

@@ -1,13 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 
-const Container = styled.div``
+const Button = styled.button`
+  padding: 6px 30px;
+  color: white;
+  background-color:#e83493;
+  border:0
+`
 
-const index = () => {
+const index = (props) => {
   return (
-    <Container>
-      <button>submit</button>
-    </Container>
+    <Button> {props.children}</Button>
+    
   )
 }
 

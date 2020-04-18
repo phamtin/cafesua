@@ -7,8 +7,7 @@ import Header from "../components/header"
 export default () => (
   <>
     <Header />
-    <div className="container">
       <Home />
-    </div>
+    
   </>
 )
