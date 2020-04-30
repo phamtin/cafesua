@@ -1,0 +1,30 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallphone {
+    @media only screen and (max-width: 576px) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 768px) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 992px) {
+      @content;
+    } //1200px
+  }
+}
+
+.main-section {
+  margin-top: 50px;
+}
+
+.main-content {
+  font-size: 18px;
+  text-align: justify;
+
+  @include respond(smallphone) {
+    font-size: 16px;
+  }
+}

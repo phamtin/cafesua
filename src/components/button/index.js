@@ -1,17 +1,12 @@
 import React from "react"
-import styled from "styled-components"
 
-const Button = styled.button`
-  padding: 6px 30px;
-  color: white;
-  background-color:#e83493;
-  border:0
-`
+import "./button.scss"
 
-const index = (props) => {
+const index = props => {
   return (
-    <Button> {props.children}</Button>
-    
+    <button>
+      <span> {props.children}</span>
+    </button>
   )
 }
 

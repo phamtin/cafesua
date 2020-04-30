@@ -1,0 +1,152 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallphone {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 767.5px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 992px) {
+      @content;
+    } //1200px
+  }
+}
+
+footer {
+  color: white;
+  background-color: rgb(24, 24, 24);
+  font-size: 16px;
+
+  a {
+    color: white;
+  }
+
+  h5 {
+    color: #ea5252;
+
+    @include respond(tablet) {
+      font-size: 18px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  .ft-top {
+    display: flex;
+    padding: 60px 0;
+    border-bottom: 1px solid rgb(56, 56, 56);
+
+    @include respond(phone) {
+      display: block;
+      padding: 40px 15px;
+    }
+  }
+
+  .f1 {
+    flex: 0 0 38%;
+    padding-right: 50px;
+    text-align: justify;
+
+    @include respond(tablet) {
+      padding-right: 20px;
+    }
+
+    @include respond(smallphone) {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 90px;
+    }
+
+    p {
+      color: #707070;
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+
+    .contact {
+      i {
+        margin-right: 30px;
+        color: #ea5252;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .f2 {
+    flex: 0 0 18%;
+
+    @include respond(tablet) {
+      font-size: 13px;
+    }
+  }
+
+  .f3 {
+    flex: 0 0 18%;
+    @include respond(tablet) {
+      font-size: 13px;
+    }
+  }
+
+  .f4 {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      align-self: flex-end;
+      cursor: pointer;
+    }
+  }
+
+  form {
+    margin-top: 7px;
+    input {
+      width: 250px;
+      padding: 6px 10px;
+      border: 0;
+      border-radius: 5px;
+
+      @include respond(tablet) {
+        width: 200px;
+        padding: 3px 10px;
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 5px 25px;
+      color: white;
+      font-family: Segoe UI !important;
+      background-color: #ea5252;
+      border: 0;
+      border-radius: 5px;
+
+      @include respond(tablet) {
+        padding: 3px 22px;
+      }
+    }
+  }
+
+  .ft-bot {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+  }
+}

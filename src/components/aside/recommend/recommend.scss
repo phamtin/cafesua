@@ -1,0 +1,60 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallphone {
+      @media only screen and (max-width: 576px) { @content };    //600px
+  }
+  @if $breakpoint == phone {
+      @media only screen and (max-width: 768px) { @content };     //900px
+  }
+  @if $breakpoint == tablet {
+      @media only screen and (max-width: 992px) { @content };    //1200px
+  }
+}
+
+.recommend {
+  margin-bottom: 50px;
+
+  h5 {
+    margin-bottom: 30px;
+  }
+
+  .small-post {
+    display: flex;
+    height: 90px;
+    margin-top: 25px;
+    overflow: hidden;
+
+    @include respond(tablet) {
+      height: 80px;
+    }
+
+    .preview {
+      width: 100px;
+      height: 80px;
+      margin-right: 10px;
+      overflow: hidden;
+
+      @include respond(tablet) {
+        width: 80px;
+        height: 70px;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .content {
+      h6 {
+        margin-bottom: 0;
+
+        @include respond(tablet) {
+          font-size: 16px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
