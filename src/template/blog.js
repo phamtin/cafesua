@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Pager from "../components/pager/Pager"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Aside from "../components/aside"
@@ -8,8 +7,8 @@ import Layout from "../components/layout"
 import "./blog.scss"
 
 export const query = graphql`
-  query($slug: String!, $skip: Int!, $limit: Int!) {
-    contentfulBlogPost(slug: { eq: $slug }, skip: $skip, limit: $limit) {
+  query($slug: String!) {
+    contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishedDate(formatString: "MMMM Do, YYYY")
       body {
@@ -29,7 +28,6 @@ const Blog = props => {
       },
     },
   }
-  const { prev, next } = pageContext
 
   return (
     <Layout>
@@ -50,7 +48,6 @@ const Blog = props => {
           </div>
         </div>
       </div>
-      <Pager pageContext={props.pageContext} />
     </Layout>
   )
 }

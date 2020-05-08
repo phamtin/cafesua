@@ -18,7 +18,7 @@ const Category = () => {
           <Link>Chuyện nghề</Link>
         </li>
         <li>
-          <Link>Tech area</Link>
+          <a href="https://viblo.asia/u/PhamTin">Tech area</a>
         </li>
       </ul>
     </div>

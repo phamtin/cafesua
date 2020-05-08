@@ -11,6 +11,10 @@ const HeaderMid = styled.div`
   display: flex;
   justify-content: center;
   min-height: 130px;
+
+  img {
+    max-width: 100%;
+  }
 `
 
 const HeaderBottom = styled.div`
@@ -79,7 +83,9 @@ const Home = () => {
               <Link to="/dev-life">Chuyện nghề</Link>
             </li>
             <li>
-              <Link to="/techArea">Tech area</Link>
+              <a href="https://viblo.asia/u/PhamTin" target="_blank">
+                Tech area
+              </a>
             </li>
           </ul>
         </div>
