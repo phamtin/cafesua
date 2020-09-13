@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 const Button = styled(Link)`
   background: ${props => props.theme.colors.primary};
   color: white;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 2px;
   margin: 0 0 0 0.5rem;
   cursor: pointer;
@@ -35,9 +35,8 @@ const Numbers = styled.div`
   border: 1px solid ${props => props.theme.colors.secondary};
   border-radius: 2px;
   display: inline-block;
-  float: left;
   color: ${props => props.theme.colors.text};
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   background: white;
   position: relative;
   transition: 0.3s all;
@@ -85,7 +84,7 @@ const Pagination = props => {
       {props.context.numberOfPages > 1 && (
         <Wrapper>
           <Numbers>
-            {props.context.humanPageNumber}{' '}
+            {props.context.humanPageNumber}
             <Select
               value={
                 props.context.humanPageNumber === 1

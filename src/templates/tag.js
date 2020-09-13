@@ -41,7 +41,7 @@ const TagTemplate = ({ data, pageContext }) => {
         />
         <Container>
           <PageTitle small>
-            {numberOfPosts} Posts Tagged: &ldquo;
+            {numberOfPosts} Bài viết liên quan: &ldquo;
             {title}
             &rdquo;
           </PageTitle>
@@ -80,7 +80,6 @@ export const query = graphql`
         }
         body {
           childMarkdownRemark {
-            timeToRead
             html
             excerpt(pruneLength: 80)
           }

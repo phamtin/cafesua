@@ -43,7 +43,9 @@ const Layout = props => {
           Skip to content
         </Skip>
         <Menu />
-        <div id="main">{props.children}</div>
+        <div id="main" style={{ background: '#fcfcfc', paddingBottom: '10em' }}>
+          {props.children}
+        </div>
       </div>
       <Footer />
       <Global styles={globalStyles} />

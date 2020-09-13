@@ -10,19 +10,21 @@ const List = styled.ul`
 
 const Tag = styled.li`
   display: inline-block;
-  margin: 0 0.25em 0.25em 0;
+  margin: 0 0 0.25em 0;
   a {
     float: left;
-    transition: 0.2s;
-    background: ${props => props.theme.colors.tertiary};
-    padding: 0.5em;
-    border-radius: 2px;
-    text-transform: capitalize;
+    padding: 4px 8px;
+    color: #e3294a;
+    font-size: 15px;
+    font-weight: bold;
     text-decoration: none;
-    color: ${props => props.theme.colors.text};
-    border: 1px solid ${props => props.theme.colors.secondary};
+    text-transform: uppercase;
+    transition: 0.2s;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
     &:hover {
-      background: ${props => props.theme.colors.secondary};
+      transform: translateY(-1px);
+      box-shadow: 0 5px 6px rgba(240, 43, 60, 0.2);
     }
   }
 `

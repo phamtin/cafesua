@@ -22,7 +22,7 @@ const Form = styled.form`
     background: ${props => props.theme.colors.tertiary};
     color: ${props => props.theme.colors.text};
     border-radius: 2px;
-    padding: 1em;
+    padding: 0.75em 1.75em;
     &::-webkit-input-placeholder {
       color: gray;
     }
@@ -124,7 +124,7 @@ const Button = styled.div`
   outline: none;
   cursor: pointer;
   color: white;
-  padding: 1em;
+  padding: 0.75em 1.5em;
   border-radius: 2px;
   text-decoration: none;
   transition: 0.2s;

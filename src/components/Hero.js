@@ -3,8 +3,9 @@ import Img from 'gatsby-image'
 import styled from '@emotion/styled'
 
 const Wrapper = styled.section`
+  /* width: 100%; */
   position: relative;
-  min-height: 300px;
+  min-height: 280px;
   height: auto;
   @media (min-width: ${props => props.theme.responsive.small}) {
     height: ${props => props.height || 'auto'};
@@ -30,7 +31,7 @@ const BgImg = styled(Img)`
 
 const Title = styled.h1`
   z-index: 2;
-  font-size: 3em;
+  font-size: 2.5em;
   text-transform: capitalize;
   font-weight: 600;
   position: absolute;
@@ -46,7 +47,7 @@ const Title = styled.h1`
 
 const Hero = props => (
   <Wrapper height={props.height}>
-    <BgImg fluid={props.image.fluid} backgroundColor={'#eeeeee'} />
+    <BgImg fluid={props.image.fluid} backgroundColor={'#eee'} />
     <Title>{props.title}</Title>
   </Wrapper>
 )

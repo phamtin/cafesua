@@ -27,6 +27,10 @@ const Body = styled.div`
   p {
     line-height: 1.6;
     margin: 0 0 2em 0;
+
+    &:first-of-type {
+      font-weight: bold;
+    }
   }
 
   a {

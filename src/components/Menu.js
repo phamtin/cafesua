@@ -6,13 +6,13 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 const Header = styled.header`
   background: ${props => props.theme.colors.primary};
   width: 100%;
-  padding: 1.5em 0;
+  padding: 1.25em 0;
 `
 const Nav = styled.nav`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
-  padding: 0 1.5em;
+  padding: 0 1.75em 0 1.5em;
 
   ul {
     display: flex;
@@ -21,11 +21,13 @@ const Nav = styled.nav`
 
   li {
     display: inline-block;
-    margin-left: 1em;
+    margin-left: 1.75em;
     &:first-of-type {
       position: relative;
       margin: 0;
-      flex-basis: 100%;
+    }
+    &:first-of-type {
+      margin-right: auto !important;
     }
   }
 
@@ -58,6 +60,15 @@ const Menu = () => {
               </Link>
             </li>
           ))}
+          <li>
+            <a
+              href="https://viblo.asia/u/PhamTin"
+              target="blank"
+              activeStyle={activeLinkStyle}
+            >
+              Tech area
+            </a>
+          </li>
         </ul>
       </Nav>
     </Header>

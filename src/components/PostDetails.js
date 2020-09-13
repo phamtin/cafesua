@@ -11,18 +11,13 @@ const Wrapper = styled.div`
 
 const Date = styled.p`
   display: inline-block;
-`
-
-const ReadingTime = styled.p`
-  display: inline-block;
+  font-weight: 500;
 `
 
 const PostDetails = props => {
   return (
     <Wrapper>
       <Date>📅 {props.date}</Date>
-      <span>•</span>
-      <ReadingTime>{`⏱️${props.timeToRead} min read `}</ReadingTime>
     </Wrapper>
   )
 }

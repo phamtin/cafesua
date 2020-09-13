@@ -2,9 +2,8 @@ import React from 'react'
 import styled from '@emotion/styled'
 
 const Title = styled.h1`
-  font-size: ${props => (props.small ? '2em' : '3em')};
-  text-transform: capitalize;
-  font-weight: 600;
+  font-size: ${props => (props.small ? '1.75em' : '3em')};
+  font-weight: 500;
   text-align: center;
   margin: 0 0 3rem 0;
   margin: ${props => (props.small ? '1rem 0 4rem 0' : '0 0 3rem 0')};

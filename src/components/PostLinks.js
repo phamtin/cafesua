@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
 const Wrapper = styled.div`
-  margin: -2em 0 0 0;
+  margin: -1.25em 0 0 0;
   padding: 0 1.5em 2em;
 `
 
@@ -16,23 +16,31 @@ const Box = styled.div`
   a {
     background: ${props => props.theme.colors.primary};
     color: white;
-    padding: 1em;
-    border-radius: 2px;
+    font-size: 0.9em;
+    padding: 0.65rem 1.75em;
+    border-radius: 4px;
     text-decoration: none;
     transition: 0.2s;
+    box-shadow: 0px 5px 15px #c2c2c2;
     &:hover {
       background: ${props => props.theme.colors.highlight};
+    }
+
+    @media screen and (max-width: ${props => props.theme.responsive.small}) {
+      padding: 0.7rem 1.25em;
     }
   }
 `
 
 const PreviousLink = styled(Link)`
   margin-right: auto;
+  font-weight: 400;
   order: 1;
 `
 
 const NextLink = styled(Link)`
   margin-left: auto;
+  font-weight: 400;
   order: 2;
 `
 
@@ -42,12 +50,12 @@ const PostLinks = props => {
       <Box>
         {props.previous && (
           <PreviousLink to={`${props.basePath}/${props.previous.slug}/`}>
-            &#8592; Prev
+            Bài mới hơn
           </PreviousLink>
         )}
         {props.next && (
           <NextLink to={`${props.basePath}/${props.next.slug}/`}>
-            Next &#8594;
+            &nbsp;Bài cũ hơn&nbsp;
           </NextLink>
         )}
       </Box>
