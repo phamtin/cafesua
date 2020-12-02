@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
 const Wrapper = styled.div`
-  margin: -1.25em 0 0 0;
+  margin: -1.15em 0 0 0;
   padding: 0 1.5em 2em;
 `
 
@@ -14,15 +14,18 @@ const Box = styled.div`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
   a {
-    background: ${props => props.theme.colors.primary};
-    color: white;
+    border: 1px solid ${props => props.theme.colors.highlight};
+    background: white;
+    color: ${props => props.theme.colors.highlight};
     font-size: 0.9em;
     padding: 0.65rem 1.75em;
-    border-radius: 4px;
+    border-radius: 5px;
     text-decoration: none;
     transition: 0.2s;
-    box-shadow: 0px 5px 15px #c2c2c2;
+    font-weight: 500;
     &:hover {
+      box-shadow: 0px 5px 15px #c2c2c2;
+      color: white;
       background: ${props => props.theme.colors.highlight};
     }
 

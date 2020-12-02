@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Header = styled.header`
-  background: ${props => props.theme.colors.primary};
+  background: ${props => props.theme.colors.background};
   width: 100%;
   padding: 1.25em 0;
 `
@@ -36,16 +36,12 @@ const Nav = styled.nav`
     color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
-    border-bottom: 2px solid ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.text};
     &:hover {
-      color: white;
+      color: ${props => props.theme.colors.highlight};
     }
   }
 `
-
-const activeLinkStyle = {
-  color: 'white',
-}
 
 const Menu = () => {
   const { menuLinks } = useSiteMetadata()
@@ -55,17 +51,11 @@ const Menu = () => {
         <ul>
           {menuLinks.map(link => (
             <li key={link.name}>
-              <Link to={link.slug} activeStyle={activeLinkStyle}>
-                {link.name}
-              </Link>
+              <Link to={link.slug}>{link.name}</Link>
             </li>
           ))}
           <li>
-            <a
-              href="https://viblo.asia/u/PhamTin"
-              target="blank"
-              activeStyle={activeLinkStyle}
-            >
+            <a href="https://viblo.asia/u/PhamTin" target="blank">
               Tech area
             </a>
           </li>

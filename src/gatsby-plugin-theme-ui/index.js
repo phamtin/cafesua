@@ -1,7 +1,7 @@
 export default {
   colors: {
     background: '#ffffff',
-    text: '#121212',
+    text: '#010f52',
     primary: '#242424',
     secondary: '#e9e9e9',
     tertiary: '#f3f3f3',
@@ -13,7 +13,7 @@ export default {
   },
   sizes: {
     maxWidth: '1000px',
-    maxWidthCentered: '700px',
+    maxWidthCentered: '680px',
   },
   responsive: {
     small: '35em',

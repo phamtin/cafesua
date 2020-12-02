@@ -13,7 +13,7 @@ const Tag = styled.li`
   margin: 0 0 0.25em 0;
   a {
     float: left;
-    padding: 4px 8px;
+    padding: 6px 12px;
     color: #e3294a;
     font-size: 15px;
     font-weight: bold;
@@ -22,9 +22,10 @@ const Tag = styled.li`
     transition: 0.2s;
     backface-visibility: hidden !important;
     -webkit-backface-visibility: hidden !important;
+    border-radius: 6px;
     &:hover {
       transform: translateY(-1px);
-      box-shadow: 0 5px 6px rgba(240, 43, 60, 0.2);
+      box-shadow: 0 3px 15px rgba(240, 43, 60, 0.2);
     }
   }
 `
