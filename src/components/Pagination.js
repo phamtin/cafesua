@@ -18,7 +18,7 @@ const Button = styled(Link)`
   background: ${props => props.theme.colors.primary};
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 2px;
+  border-radius: 3px;
   margin: 0 0 0 0.5rem;
   cursor: pointer;
   text-decoration: none;

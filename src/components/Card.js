@@ -10,7 +10,7 @@ const Post = styled.li`
   margin: 0 0 1em 0;
   width: 100%;
   transition: background 0.2s;
-  border-radius: 9px;
+  border-radius: 6px;
   overflow: hidden;
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
     flex: ${props => (props.featured ? '0 0 100%' : '0 0 49%')};

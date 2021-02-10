@@ -11,6 +11,12 @@ const Wrapper = styled.footer`
   background-color: #050505;
   border-bottom: ${props => props.theme.colors.highlight} 5px solid;
 
+  @supports (background: -webkit-canvas(squares)) {
+
+    padding: 32px 0;
+    
+  }
+
   button {
     position: absolute;
     color: red;

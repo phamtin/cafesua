@@ -20,7 +20,7 @@ const NotFoundPage = () => (
     <Container>
       <PageTitle>Page Not Found</PageTitle>
       <Text>
-        Please return <Link to="/">home</Link> or use the menu to navigate to a
+        Please return <Link to="/">CafeSua</Link> or use the menu to navigate to a
         different page.
       </Text>
     </Container>

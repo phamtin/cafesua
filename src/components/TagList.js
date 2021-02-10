@@ -25,7 +25,7 @@ const Tag = styled.li`
     border-radius: 6px;
     &:hover {
       transform: translateY(-1px);
-      box-shadow: 0 3px 15px rgba(240, 43, 60, 0.2);
+      box-shadow: 0 3px 10px rgba(240, 43, 60, 0.1);
     }
   }
 `

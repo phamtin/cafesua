@@ -6,7 +6,9 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 const Header = styled.header`
   background: ${props => props.theme.colors.background};
   width: 100%;
-  padding: 1.25em 0;
+  padding: 1.4em 0;
+  background: black;
+  box-shadow: 0 3px 10px rgba(240, 43, 60, 0.1);
 `
 const Nav = styled.nav`
   width: 100%;
@@ -36,7 +38,7 @@ const Nav = styled.nav`
     color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
-    color: ${props => props.theme.colors.text};
+    color: white;
     &:hover {
       color: ${props => props.theme.colors.highlight};
     }
