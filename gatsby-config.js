@@ -1,6 +1,8 @@
 let contentfulConfig
 try {
   contentfulConfig = require('./.contentful')
+  console.log(contentfulConfig.production.spaceId);
+  console.log(contentfulConfig.production.accessToken);
 } catch (e) {
   contentfulConfig = {
     production: {
@@ -11,6 +13,7 @@ try {
 } finally {
   const { spaceId, accessToken } = contentfulConfig.production
   if (!spaceId || !accessToken) {
+    console.log('WTF');
     throw new Error('Contentful space ID and access token need to be provided.')
   }
 }

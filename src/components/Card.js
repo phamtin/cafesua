@@ -48,7 +48,7 @@ const StyledImg = styled(Img)`
 `
 
 const Title = styled.h2`
-  color: ${props => console.log(props.theme.colors.text)};
+  color: ${props => props.theme.colors.text};
   font-size: 1.5em;
   font-weight: 600;
   text-transform: capitalize;
