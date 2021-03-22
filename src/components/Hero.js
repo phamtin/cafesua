@@ -38,16 +38,15 @@ const Title = styled.h1`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
   padding: 0 1rem;
-  top: 87%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  text-decoration:underline;
+  text-decoration: underline;
   user-select: none;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
-
 
   @media (max-width: 576px) {
     top: 50%;
