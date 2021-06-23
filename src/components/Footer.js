@@ -12,9 +12,7 @@ const Wrapper = styled.footer`
   border-bottom: ${props => props.theme.colors.highlight} 5px solid;
 
   @supports (background: -webkit-canvas(squares)) {
-
     padding: 32px 0;
-    
   }
 
   button {
@@ -25,7 +23,6 @@ const Wrapper = styled.footer`
     padding: 20px 6px;
     border-radius: 100px;
     background: ${props => props.theme.colors.primary};
-    box-shadow: 0 8px 10px #d1d1d1;
     cursor: pointer;
 
     @media screen and (max-width: ${props => props.theme.responsive.small}) {

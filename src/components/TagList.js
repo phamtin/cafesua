@@ -15,8 +15,9 @@ const Tag = styled.li`
     float: left;
     padding: 6px 12px;
     color: #e3294a;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
+    font-family: calibri;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.2s;

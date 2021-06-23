@@ -6,9 +6,15 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 const Header = styled.header`
   background: ${props => props.theme.colors.background};
   width: 100%;
-  padding: 1.4em 0;
-  background: black;
-  box-shadow: 0 3px 10px rgba(240, 43, 60, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding: 1.35em 0;
+
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 10px 0 rgba(82, 82, 82, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 `
 const Nav = styled.nav`
   width: 100%;
@@ -35,10 +41,9 @@ const Nav = styled.nav`
 
   a {
     text-decoration: none;
-    color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
-    color: white;
+    color: ${props => props.theme.colors.highlight};
     &:hover {
       color: ${props => props.theme.colors.highlight};
     }

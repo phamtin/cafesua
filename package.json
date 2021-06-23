@@ -10,9 +10,9 @@
     "babel-plugin-styled-components": "^1.10.7",
     "chalk": "^3.0.0",
     "contentful-import": "^7.6.2",
-    "gatsby": "^2.19.12",
+    "gatsby": "^3.7.2",
     "gatsby-awesome-pagination": "^0.3.5",
-    "gatsby-image": "^2.2.40",
+    "gatsby-image": "^3.7.1",
     "gatsby-plugin-catch-links": "^2.1.25",
     "gatsby-plugin-emotion": "^4.1.22",
     "gatsby-plugin-google-analytics": "^2.1.35",
@@ -22,7 +22,7 @@
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-schema-snapshot": "^1.0.0",
     "gatsby-plugin-sitemap": "^2.2.27",
-    "gatsby-plugin-theme-ui": "^0.3.0",
+    "gatsby-plugin-theme-ui": "^0.10.1",
     "gatsby-remark-autolink-headers": "^2.1.24",
     "gatsby-remark-images-contentful": "^2.1.31",
     "gatsby-remark-prismjs": "^3.3.31",
@@ -44,25 +44,14 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "test": "yarn run lint:css && yarn run lint:js && yarn run check-pretty",
     "setup": "node ./bin/setup.js",
-    "lint:js": "eslint --ext .js,.jsx .",
-    "lint:css": "stylelint 'src/**/*.js'",
-    "check-pretty": "prettier --list-different {,src/**/}*.{js,jsx,json,css,scss}",
     "format": "prettier --write \"src/**/*.js\"",
     "clean": "gatsby clean"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-gatsby-standard": "^2.2.0",
-    "prettier": "^1.19.1",
-    "stylelint": "^13.0.0",
-    "stylelint-config-prettier": "^8.0.1",
-    "stylelint-config-standard": "^19.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.9.0"
+    "prettier": "^1.19.1"
   }
 }

@@ -7,8 +7,7 @@ const Wrapper = styled.section`
   padding: 2em 1.5em 2em;
   flex-grow: 1;
   text-align: justify;
-  background: white;
-  box-shadow: 1px 5px 25px #e4e4e4;
+  background: #2b2b2b;
 
   @media screen and (max-width: ${props => props.theme.responsive.small}) {
     padding: 2em 1.3em 2em;

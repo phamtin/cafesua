@@ -43,7 +43,10 @@ const Layout = props => {
           Skip to content
         </Skip>
         <Menu />
-        <div id="main" style={{ background: '#fcfcfc', paddingBottom: '10em' }}>
+        <div
+          id="main"
+          style={{ background: '#1a1a1a', padding: '3.7em 0 10em 0' }}
+        >
           {props.children}
         </div>
       </div>
