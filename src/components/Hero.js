@@ -30,9 +30,9 @@ const BgImg = styled(Img)`
 `
 
 const Title = styled.h1`
+  font-family: calibri;
   z-index: 2;
   font-size: 2.5em;
-  text-transform: capitalize;
   font-weight: 600;
   position: absolute;
   width: 100%;
@@ -43,7 +43,6 @@ const Title = styled.h1`
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  text-decoration: underline;
   user-select: none;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

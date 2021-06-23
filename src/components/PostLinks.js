@@ -14,6 +14,7 @@ const Box = styled.div`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidthCentered};
   a {
+    font-family: calibri;
     border: 1px solid ${props => props.theme.colors.highlight};
     background: white;
     color: ${props => props.theme.colors.highlight};
