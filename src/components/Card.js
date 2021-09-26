@@ -20,6 +20,7 @@ const Post = styled.li`
     flex: ${props => (props.featured ? '0 0 100%' : '0 0 30.5%')};
   }
   &:hover {
+    box-shadow: 0 2px 5px rgba(232, 232, 232, 1);
     h2 {
       color: ${props => props.theme.colors.highlight};
       transition: 0.3s;
